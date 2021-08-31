@@ -1,0 +1,500 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+    left: -500px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+@keyframes fadein2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showin {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  background-color: #000000;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+}
+
+.sec1 {
+  background-image: url("./static/bg-max.png");
+  background-repeat: no-repeat;
+  background-position: 500px 0;
+  background-position: center;
+  animation-name: fadein2;
+  animation-duration: 1s;
+}
+
+.sec1content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 580px) {
+  .sec1 {
+    background-image: url("bg-m6.png");
+
+    background-repeat: no-repeat;
+
+    background-position: 20px center;
+  }
+}
+
+.texttop {
+  font-family: globotipo_textoblack, -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: left;
+  margin: 46px 1px 28px 74px;
+  animation-name: fadein;
+  animation-duration: 1s;
+  position: relative;
+}
+@media only screen and (max-width: 800px) {
+  .texttop {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .texttop {
+    font-size: 30px;
+    margin: 62px 12px 22px 16px;
+  }
+}
+
+.texttop2 {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: left;
+  margin: 1px 1px 35px 74px;
+  animation-name: fadein;
+  animation-duration: 1s;
+  position: relative;
+}
+@media only screen and (max-width: 800px) {
+  .texttop2 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .texttop2 {
+    font-size: 22px;
+    margin: 22px 1px 35px 16px;
+  }
+}
+
+.gplogo {
+  padding: 26px 0 0 69px;
+  position: relative;
+  color: red;
+
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+
+@media only screen and (max-width: 580px) {
+  .gplogo {
+    padding: 26px 0 0 12px;
+  }
+}
+
+.btn {
+  padding: 0 0 52px 74px;
+  animation-name: fadein;
+  animation-duration: 1s;
+  position: relative;
+}
+@media only screen and (max-width: 580px) {
+  .btn {
+    padding: 40px 12px 35px 12px;
+  }
+}
+.btn button {
+  width: 30%;
+  min-width: 200px;
+  height: 58px;
+
+  background-color: rgb(224, 34, 34);
+  color: #ffffff;
+}
+
+.bar img {
+}
+.bar {
+  animation-name: fadein2;
+  animation-duration: 0.4s;
+}
+
+.sec2 {
+  background-color: #151515;
+}
+
+.sec2content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: globotipo_textoblack, -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: left;
+  margin: 46px 1px 30px 74px;
+  animation-name: showin;
+  animation-duration: 2s;
+  padding-top: 20px;
+}
+@media only screen and (max-width: 800px) {
+  .title {
+    margin: 39px 16px 29px 16px;
+  }
+}
+
+.numbers {
+  display: flex;
+  padding: 0 74px;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 800px) {
+  .numbers {
+    padding: 0 16px;
+    flex-wrap: wrap;
+  }
+}
+
+.nblock {
+  width: 25%;
+}
+@media only screen and (max-width: 800px) {
+  .nblock {
+    width: 50%;
+    padding-bottom: 40px;
+  }
+}
+
+.n1 {
+  position: relative;
+  left: 100vw;
+  transform: translatex(-100vw);
+  transition: transform 0.3s 1s;
+}
+
+.n2 {
+  position: relative;
+  left: 100vw;
+  transform: translatex(-100vw);
+  transition: transform 0.3s 1.3s;
+}
+.n3 {
+  position: relative;
+  left: 100vw;
+  transform: translatex(-100vw);
+  transition: transform 0.3s 1.6s;
+}
+.n4 {
+  position: relative;
+  left: 100vw;
+  transform: translatex(-100vw);
+  transition: transform 0.3s 1.9s;
+}
+
+.n1number {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 58px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: left;
+  margin: 1px 1px 10px 0;
+}
+@media only screen and (max-width: 580px) {
+  .n1number {
+    font-size: 46px;
+  }
+}
+
+.n1text {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 23.3px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: left;
+  margin: 15px 1px 46px 0;
+}
+@media only screen and (max-width: 580px) {
+  .n1text {
+    font-size: 16px;
+    margin: 15px 1px 0 0;
+  }
+}
+
+.sec3 {
+  background-color: #1f1f1f;
+}
+
+.sec3-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sec3block {
+  padding: 40px 1px 1px 80px;
+}
+@media only screen and (max-width: 1000px) {
+  .sec3block {
+    padding: 60px 1px 1px 80px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .sec3block {
+    padding: 40px 11px 1px 11px;
+  }
+}
+
+.titlesec3 {
+  font-family: globotipo_textoblack, -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: left;
+  padding: 1px 1px 1px 1px;
+}
+.descsec3 {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: left;
+  padding: 1px 1px 24px 1px;
+}
+
+.nblock {
+  display: flex;
+  flex-direction: column;
+}
+
+.picbig {
+}
+.picsmall {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .picbig {
+    display: none;
+  }
+  .picsmall {
+    display: block;
+  }
+}
+.sec3imgblock {
+  display: flex;
+  gap: 1%;
+  margin-bottom: 100px;
+}
+@media only screen and (max-width: 700px) {
+  .sec3imgblock {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+  }
+}
+.sec3-content {
+  padding: 0 20px;
+}
+.sec3img {
+  width: 33%;
+}
+@media only screen and (max-width: 700px) {
+  .sec3img {
+    width: 60%;
+    margin: 2% 0;
+  }
+}
+.sec3img img {
+  width: 100%;
+}
+@media only screen and (max-width: 700px) {
+  .sec3img img {
+    width: 80%;
+  }
+}
+.sec4 {
+  background-color: #151515;
+}
+
+.sec4content {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 74px;
+  padding-top: 111px;
+
+  background-color: #151515;
+}
+@media only screen and (max-width: 580px) {
+  .sec4content {
+    flex-direction: column;
+    padding: 0 12px;
+    padding-top: 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .sec4content {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+}
+
+.sec4right {
+  padding: 0 50px 0 20px;
+}
+@media only screen and (max-width: 580px) {
+  .sec4 {
+    flex-direction: column;
+    padding: 0 12px;
+    padding-top: 30px;
+  }
+}
+
+.sec4righttext {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: left;
+  margin: 1px 1px 36px 1px;
+}
+@media only screen and (max-width: 580px) {
+  .sec4righttext {
+    font-size: 26px;
+    margin: 20px 1px 36px 1px;
+  }
+}
+
+.textbig {
+}
+.textsmall {
+  display: none;
+}
+@media only screen and (max-width: 580px) {
+  .textbig {
+    display: none;
+  }
+  .textsmall {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .textbig {
+    font-size: 35px;
+  }
+}
+
+.btnstores {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sec5 {
+  background-color: #151515;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.sec5text1 {
+  font-family: globotipo_textoblack, -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #dedede;
+  text-align: left;
+  padding: 50px 268px 20px 74px;
+}
+.sec5text2 {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #dedede;
+  text-align: left;
+  padding: 1px 74px 30px 74px;
+}
+@media only screen and (max-width: 580px) {
+  .sec5text1 {
+    padding: 20px 12px 20px 12px;
+  }
+  .sec5text2 {
+    padding: 1px 74px 30px 12px;
+  }
+}
+
+.sec6 {
+  background-color: #151515;
+}
+
+.sec6img {
+  padding: 19px 0 39px 0;
+  margin: 0 auto;
+  width: 273px;
+}
